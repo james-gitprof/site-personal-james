@@ -1,0 +1,397 @@
+
+/* ---- HEADER ---- */
+
+.navigation {
+    display: none;
+}
+
+.hero {
+    letter-spacing: -0.75px;
+    border-block-end: 1px solid rgba(0, 0, 0, 0.25);
+    height: 100dvh;
+    background-color: var(--color-white);
+}
+
+.hero-content-container {
+    gap: 3rem;
+}
+
+.greeting {
+    font-size: 8.6rem;
+    font-weight: 500;
+}
+
+.introduction {
+    font-size: 7.4rem;
+    font-weight: 500;
+}
+
+.hero .job-role {
+    font-size: 5.2rem;
+}
+
+.role-text {
+    color: var(--color-black); /* fallback, in case some of the properties here don't work*/
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clickables-container {
+    gap: 3.6rem;
+}
+
+.hero-btn-container {
+    letter-spacing: 0px;
+    font-size: 1.8rem;
+}
+
+.hero-icon {
+    width: 2.4rem;
+}
+
+.hero-btn {
+    text-decoration: none;
+    padding-block: 1.2rem;
+    padding-inline: 2.4rem;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    border-radius: 2.4rem;
+    transition: background-color .3s;
+    box-shadow: 0 .4rem .5rem rgba(0,0,0, .2);
+}
+
+.hero-btn:hover {
+    background-color: var(--primary-color-backdrop);
+}
+
+.scroll-cta {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 2.4rem;
+    font-size: 1.8rem;
+    padding-inline: 2.4rem;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    cursor: pointer;
+    animation: scroll-cta-float ease-in-out 1.5s infinite alternate;
+    font-weight: 600;
+    box-shadow: 0 .3rem .6rem rgba(0, 0, 0, 0.274);
+    transition: color .3s;
+}
+
+.social-link {
+    cursor: pointer;
+}
+
+.social-link:hover .social-link-icon {
+    color: var(--primary-color-backdrop);
+}
+
+.social-link-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+    color: var(--primary-color);
+    transition: color .3s;
+}
+
+.scroll-cta:hover {
+    color: var(--primary-color);
+}
+
+/* ==================== Main ==================== */
+
+.header-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+}
+
+/* ========== About Me ========== */
+.section-about-me {
+    box-shadow: 0 .6rem 1.8rem rgba(0, 0, 0, 0.25);
+}
+
+.decorative-bar {
+    background-color: var(--primary-color);
+    height: 1rem;
+    width: 100%;
+    border-radius: 3.6rem;
+}
+
+.about-me-header {
+    justify-self: start;
+}
+
+.section-about-me .container {
+    row-gap: 9.6rem;
+    column-gap: 4.8rem;
+}
+
+.dev-portrait {
+    max-width: 60%;
+    border-radius: 2.4rem;
+    box-shadow: 0 .6rem .8rem rgba(0, 0, 0, 0.25);
+}
+
+
+/* ========== My Skills ==========*/
+
+.section-dev-skills {
+    background-color: var(--very-light-primary);
+}
+
+.my-skill-header {
+    align-self: flex-start;
+}
+
+.skill-grid {
+    grid-template-columns: .6fr 1.4fr;
+    column-gap: 4.8rem;
+}
+
+.legend-familiarity {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+
+.skill-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.skill-name {
+    font-size: 1.8rem;
+}
+
+.skill-indicator{
+    height: 3rem;
+    width: .6rem;
+    border-radius: 3.6rem;
+}
+
+.skill--indicator-strong {
+    background-color: var(--strong-primary);
+}
+
+.skill--indicator-semi-strong {
+    background-color: var(--medium-strong-primary);
+}
+
+.skill--indicator-medium {
+    background-color: var(--medium-primary);
+}
+
+.skill--indicator-light {
+    background-color: var(--light-primary);
+}
+
+/* ========== Education ========== */
+
+.education-header {
+    align-self: flex-start;
+}
+
+.timeline {
+    width: 100%;
+    row-gap: 9.6rem;
+    column-gap: 4.8rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    background-color: var(--medium-primary);
+    padding: .3rem;
+    border-radius: 2.4rem;
+}
+
+.education-node { 
+    padding: 3.2rem;
+    font-size: 2rem;
+    border-radius: 2.4rem;
+    color: var(--color-white);
+    background-color: var(--primary-color);
+    gap: 1rem;
+    transition: background-color .4s, box-shadow .4s;
+}
+
+.education-node:hover {
+    background-color: var(--medium-primary);
+    box-shadow: 0 0 1.2rem var(--primary-color);
+}
+
+.institution {
+    gap: .6rem;
+}
+
+.institution .year-name {
+    font-weight: 600;
+}
+
+.institution .name {
+    font-weight: 600;
+}
+
+.education-node:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    padding: 1.4rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    right: -4.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.education-node:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    padding: 1.4rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -3.5rem;
+}
+
+/* ========== Contact Me ========== */
+
+.contact-container {
+    column-gap: 2.4rem;
+}
+
+.contact .header-pt {
+    grid-column: span 2;
+}
+
+.contact .grid {
+    row-gap: 9.6rem;
+}
+
+.form-component--field {
+    font-size: 2.4rem;
+}
+
+.form-component--field input, .form-component--field .message-area {
+    border-radius: 1.6rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: inherit;
+}
+
+.form-component--field input:focus, .form-component--field .message-area:focus {
+    outline: 2px solid var(--primary-color);
+    box-shadow: 0 .2rem .2rem rgba(0, 0, 0, 0.25) inset;
+}
+
+.form-component--field .message-area{
+    resize: vertical;
+    height: 20rem;
+}
+
+.contact-form .form-component--button-submit {
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    padding-block: 1.2rem;
+    padding-inline: 2.4rem;
+    border-radius: 2.4rem;
+    cursor: pointer;
+    transition: background-color .3s;
+    font-size: 1.6rem;
+}
+
+.contact-form .form-component--button-submit:hover {
+    background-color: var(--primary-color-backdrop);
+}
+
+.form-component--field .error-text {
+    font-size: 1.4rem;
+    color: crimson;
+}
+
+.form-component--button-submit {
+    margin-block-start: 1.6rem;
+}
+
+.contact-presentation {
+    height: 100%;
+    width: 100%;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+    padding-block-start: 9.6rem;
+    padding-block-end: 4.8rem;
+    border-block-start: 1px solid var(--color-black-subtle);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* ========== Snackbar (on form submit) ========== */
+
+.snackbar--notif-submit {
+    position: fixed;
+    top: 93%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 5%;
+    border-radius: 1.2rem;
+    border: 1px solid var(--primary-color);
+    padding: 1.6rem;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    transition: all .3s;
+}
+
+.notif-text {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+}
+
+.snackbar--display-hide {
+    top: 100%;
+}
+
+
+/* ==================== Miscellaneous ====================*/
+
+section {
+    transition: transform 1s, opacity 1s;
+}
+
+.force-animate {
+    transition: transform .7s, opacity .7s;
+}
+
+.element--hide-sliding {
+    transform: translateY(1rem);
+    opacity: 0;
+    pointer-events: 0;
+}
+
+.element--hide, .section--hide {
+    pointer-events: none;
+    opacity: 0; /* animatable */
+}
+
+.section--hide {
+    transform: translateY(2rem);
+}
+
+
+
+

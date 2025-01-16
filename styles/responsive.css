@@ -1,0 +1,70 @@
+
+/* 1120px */
+@media (max-width: 70em) {
+    .section-about-me .container {
+        grid-template-columns: 1fr;
+    }
+
+    .dev-portrait {
+        max-width: 30%;
+    }
+}
+
+/* 928px */
+@media (max-width: 58em) {
+
+    html {
+        font-size: 56.25%;
+    }
+
+    .text-pt {
+        font-size: 1.8rem;
+    }
+
+    .familiarity-levels {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 3.6rem;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 8rem;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: -3rem;   
+    }
+
+    .education-node:nth-child(even)::before {
+        left: -4rem;
+    }
+
+    .education-node:nth-child(odd)::after {
+        right: auto;
+        left: -4rem;
+    }
+
+    .auto-generated-spacer {
+        display: none;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .header-pt {
+        grid-column: auto;
+    }
+
+}
+
+/* 704px */
+@media (max-width: 44em) {
+
+}

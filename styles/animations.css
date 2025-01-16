@@ -1,0 +1,9 @@
+
+@keyframes scroll-cta-float {
+    from {
+        transform: translate(-50%, -95%);
+    }
+    to {
+        transform: translate(-50%, -70%);
+    }
+}

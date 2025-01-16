@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>James Bernard Udal</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/site.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link rel="stylesheet" href="styles/patterns.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script defer src="scripts/site.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+
+<body>
+    <header class="hero pad--lg flex flex--y-center flex--x-center pos-relative">
+        <div class="hero-content-container flex flex--x-center flex--y-center flex-layout--column">
+            <div class="greeter-content flex flex--gap-sm flex--y-center flex-layout--column">
+                <p class="greeting">👋</p>
+                <div class="intro-container flex flex--x-center flex--y-center flex-layout--column">
+                    <p class="introduction">I am James,</p>
+                    <p class="job-role">An aspiring <span class="role-text">web developer.</span></p>
+                </div>
+            </div>
+
+            <div class="flex flex-layout--column flex--gap-lg clickables-container">
+                <div class=" hero-btn-container flex flex--y-center flex--gap-md">
+                    <a class="hero-btn flex flex--gap-sm flex--x-center flex--y-center" href="#"
+                        data-btn-hero="contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 hero-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                        Contact Me
+                    </a>
+                    <a class="hero-btn flex flex--gap-sm flex--x-center flex--y-center" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 hero-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                        </svg>
+                        My Resume
+                    </a>
+                </div>
+
+                <div class="social-links-container flex flex--x-center flex--y-center flex--gap-md">
+                    <a class="social-link" href="https://github.com/james-gitprof" target="_blank">
+                        <svg viewBox="0 0 128 128" class="social-link-icon">
+                            <g fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z">
+                                </path>
+                                <path
+                                    d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a class="social-link" href="https://www.linkedin.com/in/udaljamesbernard/" target="_blank">
+                        <svg viewBox="0 0 128 128" class="social-link-icon">
+                            <g fill="currentColor">
+                                <path
+                                    d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Floating scroll down cta, positioned absolute-->
+            <div class="scroll-cta flex pad--xsm flex--gap-sm flex--x-center flex--y-center pos-absolute">
+                <span class="cta-scroll-icon">&downarrow;</span>
+                <p class="cta-scroll-text">Scroll below</p>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="section-about-me section-spacing">
+            <div class="container grid grid--2-cols grid--x-center grid--y-center">
+                <p class="header-pt about-me-header text--thickness-600 flex flex--y-center flex--gap-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 header-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    About Me
+                </p>
+                <div class="decorative-bar" role="presentation" aria-hidden="true">
+                    &nbsp;
+                </div>
+
+                <div class="about-text text-pt line-height--15 flex flex--gap-sm flex-layout--column">
+                    <p>
+                        My journey into programming started with a simple question: How do computers make things move on
+                        a screen?
+                    </p>
+                    <p>
+                        One of my first encounters with programming was with the Microsoft Small Basic
+                        language from
+                        junior high school which fueled my interest in making computers do different actions. I found it
+                        fascinating how
+                        how a couple lines of code can transform the way we interact with technology.
+                    </p>
+                    <p>
+                        It was only a matter of time until websites piqued my interest. The idea of having your own
+                        website- a digital presence that you can personalize with great freedom; in the world wide web,
+                        is something I thought was cool. It was here where my journey with web development started.
+                    </p>
+                    <p>
+                        From there, I discovered the steps to create a website. However, at the time, it was something I
+                        struggled with and had difficulties trying to learn it on my own. At some point, I had to call
+                        it quits. But, I did not
+                        completely given up on it. It had always been at the corner of my mind.
+                    </p>
+                    <p>
+                        And here we are, my interest rekindled and a newfound excitement burning within.
+                        Now, I am completely absorbed in web development; driven by enthusiasm and
+                        passion to learn and
+                        grow. Currently, I am at the starting line of my web development journey, making my first steps
+                        in pursuit of
+                        self-improvement and excellence.
+                    </p>
+                </div>
+
+                <img src="resources/imgs/dev-portrait.jpg" class="dev-portrait" alt="developer's portrait" />
+            </div>
+        </section>
+
+        <section class="section-dev-skills section-spacing">
+            <div class="skill-container container flex flex--y-center flex--gap-xlg-2 flex-layout--column">
+                <p class="my-skill-header header-pt text--thickness-600 flex flex--y-center flex--gap-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 header-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+                    My Skills
+                </p>
+                <div class="grid skill-grid">
+                    <div class="legend-familiarity flex flex--x-center flex-layout--column flex--gap-lg">
+                        <p class="text--thickness-500">Level of Familiarity</p>
+                        <div class="familiarity-levels flex flex--x-center flex-layout--column flex--gap-sm">
+
+                            <div class="flex flex--gap-sm flex--y-center">
+                                <div class="skill-indicator skill--indicator-strong"></div>
+                                <p>Strongly familiar</p>
+                            </div>
+
+                            <div class="flex flex--gap-sm flex--y-center">
+                                <div class="skill-indicator skill--indicator-semi-strong"></div>
+                                <p>Moderately familiar</p>
+                            </div>
+
+                            <div class="flex flex--gap-sm flex--y-center">
+                                <div class="skill-indicator skill--indicator-medium"></div>
+                                <p>Somewhat familiar</p>
+                            </div>
+
+                            <div class="flex flex--gap-sm flex--y-center">
+                                <div class="skill-indicator skill--indicator-light"></div>
+                                <p>Exploring</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="skill-entries flex flex--y-center flex--gap-sm flex--wrap">
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="flex flex--y-center flex--x-center flex--gap-sm">
+                                <div class="skill-indicator skill--indicator-semi-strong"></div>
+
+                                <svg viewBox="0 0 128 128" class="skill-icon">
+                                    <path fill="#E44D26"
+                                        d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path>
+                                    <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path>
+                                    <path fill="#EBEBEB"
+                                        d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z">
+                                    </path>
+                                </svg>
+                            </div>
+
+                            <p class="skill-name text--thickness-500">HTML</p>
+                        </div>
+
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="skill-indicator skill--indicator-semi-strong"></div>
+
+                            <svg viewBox="0 0 128 128" class="skill-icon">
+                                <path fill="#1572B6"
+                                    d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626L119.24 1H8.76zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336L64 101.607v.001l-.022.019-28.311-7.888L33.75 72h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229L81.075 65H48.792l-.277-3.043-.631-7.129L47.553 51h34.749l1.264-14H30.64l-.277-3.041-.63-7.131L29.401 23h69.281l-.331 3.862z">
+                                </path>
+                            </svg>
+
+                            <p class="skill-name text--thickness-500">CSS</p>
+                        </div>
+
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="skill-indicator skill--indicator-semi-strong"></div>
+
+                            <svg viewBox="0 0 128 128" class="skill-icon">
+                                <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+                                <path fill="#323330"
+                                    d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
+                                </path>
+                            </svg>
+
+                            <p class="skill-name text--thickness-500">JavaScript</p>
+                        </div>
+
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="skill-indicator skill--indicator-medium"></div>
+
+                            <svg viewBox="0 0 128 128" class="skill-icon">
+                                <linearGradient id="python-original-a" gradientUnits="userSpaceOnUse" x1="70.252"
+                                    y1="1237.476" x2="170.659" y2="1151.089"
+                                    gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)">
+                                    <stop offset="0" stop-color="#5A9FD4"></stop>
+                                    <stop offset="1" stop-color="#306998"></stop>
+                                </linearGradient>
+                                <linearGradient id="python-original-b" gradientUnits="userSpaceOnUse" x1="209.474"
+                                    y1="1098.811" x2="173.62" y2="1149.537"
+                                    gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)">
+                                    <stop offset="0" stop-color="#FFD43B"></stop>
+                                    <stop offset="1" stop-color="#FFE873"></stop>
+                                </linearGradient>
+                                <path fill="url(#python-original-a)"
+                                    d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"
+                                    transform="translate(0 10.26)"></path>
+                                <path fill="url(#python-original-b)"
+                                    d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"
+                                    transform="translate(0 10.26)"></path>
+                                <radialGradient id="python-original-c" cx="1825.678" cy="444.45" r="26.743"
+                                    gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop>
+                                    <stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <path opacity=".444" fill="url(#python-original-c)"
+                                    d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z">
+                                </path>
+                            </svg>
+
+                            <p class="skill-name text--thickness-500">Python</p>
+                        </div>
+
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="skill-indicator skill--indicator-medium"></div>
+
+
+                            <svg viewBox="0 0 128 128" class="skill-icon">
+                                <path fill="#EA2D2E"
+                                    d="M47.617 98.12c-19.192 5.362 11.677 16.439 36.115 5.969-4.003-1.556-6.874-3.351-6.874-3.351-10.897 2.06-15.952 2.222-25.844 1.092-8.164-.935-3.397-3.71-3.397-3.71zm33.189-10.46c-14.444 2.779-22.787 2.69-33.354 1.6-8.171-.845-2.822-4.805-2.822-4.805-21.137 7.016 11.767 14.977 41.309 6.336-3.14-1.106-5.133-3.131-5.133-3.131zm11.319-60.575c.001 0-42.731 10.669-22.323 34.187 6.024 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.793 15.634-29.58zm9.998 81.144s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.095.171-4.45-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.952-3.487-32.013 6.85-13.742 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM85 77.896c2.395-1.634 5.703-3.053 5.703-3.053s-9.424 1.685-18.813 2.474c-11.494.964-23.823 1.154-30.012.326-14.652-1.959 8.033-7.348 8.033-7.348s-8.812-.596-19.644 4.644C17.455 81.134 61.958 83.958 85 77.896zm5.609 15.145c-.108.29-.468.616-.468.616 31.273-8.221 19.775-28.979 4.822-23.725-1.312.464-2 1.543-2 1.543s.829-.334 2.678-.72c7.559-1.575 18.389 10.119-5.032 22.286zM64.181 70.069c-4.614-10.429-20.26-19.553.007-35.559C89.459 14.563 76.492 1.587 76.492 1.587c5.23 20.608-18.451 26.833-26.999 39.667-5.821 8.745 2.857 18.142 14.688 28.815zm27.274 51.748c-19.187 3.612-42.854 3.191-56.887.874 0 0 2.874 2.38 17.646 3.331 22.476 1.437 57-.8 57.816-11.436.001 0-1.57 4.032-18.575 7.231z">
+                                </path>
+                            </svg>
+
+                            <p class="skill-name text--thickness-500">Java</p>
+                        </div>
+
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="skill-indicator skill--indicator-medium"></div>
+
+                            <svg viewBox="0 0 128 128" class="skill-icon">
+                                <path fill="#F34F29"
+                                    d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z">
+                                </path>
+                            </svg>
+
+                            <p class="skill-name text--thickness-500">Git</p>
+                        </div>
+
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="skill-indicator skill--indicator-medium"></div>
+
+
+                            <svg viewBox="0 0 128 128" class="skill-icon">
+                                <path fill="#019833"
+                                    d="M64.461 7.136L8.529 63.173l55.779 55.898 56.085-56.037L64.461 7.136z"></path>
+                                <path
+                                    d="M64.308 119.211L8.376 63.174l.153-.139L64.614 6.858l55.932 56.037-.153.139-56.085 56.177zM8.682 63.174l55.626 55.759 55.932-55.898L64.614 7.276 8.682 63.174z">
+                                </path>
+                                <path fill="#66FE98" d="M64.308 7.275V2.396L3.319 63.452h5.21L64.308 7.275z"></path>
+                                <path
+                                    d="M8.529 63.452H3.012l.153-.139L64.307 2.118v5.158L8.528 63.453zm-4.904-.139h4.75L64.154 7.276v-4.6L3.625 63.314z">
+                                </path>
+                                <path fill="#45FE02" d="M64.154 7.275V2.396l60.989 61.056h-5.21L64.154 7.275z"></path>
+                                <path
+                                    d="M125.297 63.452h-5.517L64.001 7.415V2.257l.153.139 61.142 61.056zm-5.363-.139h4.75L64.308 2.675v4.6l55.626 56.037z">
+                                </path>
+                                <path fill="#017D17" d="M64.308 119.35v4.879L3.319 63.313h5.21l55.779 56.037z"></path>
+                                <path
+                                    d="M64.308 124.508l-.153-.139L3.013 63.174H8.53l55.779 56.177v5.158zM3.625 63.313l60.529 60.638v-4.6L8.375 63.314h-4.75z">
+                                </path>
+                                <path
+                                    d="M33.507 112.659H21.708l-4.597-2.649V22.608h-3.678l-3.065-3.067V9.923l3.218-3.485h41.221l3.678 3.764v9.061l-3.065 3.764h-3.065v28.995l29.269-28.995h-1.686l-3.371-3.624V9.785l3.371-3.067h41.528l3.218 3.346v9.061L33.507 112.66zm-10.573-4.461h8.735l88.725-91.026v-5.436l-.613-.697H81.625l-.613.558v5.855l.919.976h10.573L47.912 62.477V18.428h5.517l.766-.836v-5.576l-1.073-1.115H15.578l-.766.836v5.994l.46.558h6.436v89.074l1.226.836z">
+                                </path>
+                                <path fill="#005D04" d="M64.154 119.35v4.879l60.989-61.056h-5.21L64.154 119.35z"></path>
+                                <path
+                                    d="M64.001 124.508v-5.158l55.779-56.177h5.517l-.153.139-61.142 61.195zm.306-5.158v4.6l60.529-60.638h-4.75l-55.779 56.037z">
+                                </path>
+                                <path
+                                    d="M63.848 125.065L1.94 63.173 64.002 1.002l61.908 61.892-62.062 62.171zM3.932 63.173l59.916 60.08 60.223-60.219-59.916-60.08L3.932 63.173z">
+                                </path>
+                                <path fill="#FEFEFE"
+                                    d="M54.347 12.294l2.145-1.115-2.299-2.23H14.657l-1.992 1.952v7.667l2.299 2.23 1.073-2.23-1.379-1.394v-5.436l1.073-.976h37.85l.766 1.533z">
+                                </path>
+                                <path
+                                    d="M14.965 20.936l-2.452-2.37v-7.667l2.145-2.091h39.689l2.452 2.37-2.452 1.255-.919-1.533h-37.85l-.919.836v5.297l1.379 1.394-1.073 2.509zm-2.145-2.509l2.145 2.091.919-1.952-1.379-1.394v-5.436l1.073-.976h37.85l.919 1.533 1.992-1.115-2.145-2.091H14.658l-1.992 1.952v7.388z">
+                                </path>
+                                <path
+                                    d="M30.748 108.895h-7.509l-1.226-1.255V18.566h-6.436l-1.379-1.255v-5.436l1.226-1.255h37.544l1.379 1.115v5.297l-1.532 1.533h-7.049v47.952l42.6-43.213v-4.739H81.93l-1.226-1.255v-5.297l1.532-1.533h36.931l1.532 1.533v4.182l-89.951 92.699zm-7.355-.139h7.355l89.645-92.699v-4.043l-1.379-1.394H82.39l-1.379 1.394v5.018l1.226 1.115h6.589v5.158l-43.06 43.771V18.287h7.202l1.379-1.394v-5.158l-1.226-.976H15.577l-1.226 1.115v5.158l1.226 1.115h6.589v89.214l1.226 1.394z">
+                                </path>
+                                <path fill="#FEFEFE"
+                                    d="M22.014 18.288v89.214l1.226 1.255-.919 1.673-2.605-2.509V20.659l2.299-2.37z">
+                                </path>
+                                <path
+                                    d="M22.32 110.847l-2.758-2.649V20.657l2.605-2.509v89.493l1.226 1.394-1.073 1.812zm-2.452-2.788l2.452 2.37.766-1.533-1.073-1.255V18.567l-2.145 2.091v87.402z">
+                                </path>
+                                <path fill="gray" d="M15.731 18.288l-.613 2.091h4.75l2.605-2.091H15.73z"></path>
+                                <path
+                                    d="M19.868 20.657h-4.904l.766-2.37h7.202l-3.065 2.37zm-4.75-.279h4.597l2.299-1.952h-6.436l-.46 1.952z">
+                                </path>
+                                <g>
+                                    <path fill="#FEFEFE"
+                                        d="M81.47 20.797l1.073-2.23-1.532-1.394v-4.739l1.686-1.812h36.471l1.379 1.812 1.992-1.394-1.992-2.091H81.318l-1.992 1.952v7.667l2.145 2.23M49.597 57.459l-3.831 9.2 43.06-43.213v-5.158l-39.229 39.17z">
+                                    </path>
+                                    <path
+                                        d="M45.919 66.937l-.153-.139 3.831-9.34 39.382-39.31v5.436l-43.06 43.352zm3.831-9.34l-3.524 8.782 42.6-42.795v-4.879L49.75 57.597zm31.72-36.801l-.153-.139-1.992-1.952v-7.806l1.992-2.091h39.382l2.145 2.37-2.145 1.533-1.379-1.952H82.696l-1.686 1.673v4.739l1.532 1.394-1.073 2.23zm-1.992-2.091l1.992 1.812.919-1.952-1.532-1.394v-4.879l1.839-1.812h36.624l1.379 1.812 1.839-1.255-1.992-1.952H81.317l-1.839 1.952v7.667z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path fill="gray"
+                                        d="M54.194 12.015l1.839-1.255v7.527l-2.145 2.23h-4.291v37.08l-3.831 9.2v-48.51h7.049l1.379-1.115v-5.158z">
+                                    </path>
+                                    <path
+                                        d="M45.919 66.798h-.153v-48.51h7.202l1.226-.976v-5.158l2.145-1.394v7.806l-2.299 2.23h-4.137v36.94l-3.984 9.061zm0-48.371V66.24l3.678-8.643V20.378h4.291l2.145-2.091v-7.249l-1.686 1.115v5.158l-1.379 1.115h-7.049z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path xlink:href="#vim-original-path3620" fill="#ccc"
+                                        d="M82.39 10.621l-1.379 1.394v5.158l1.226 1.255h6.436v5.018L45.766 66.798V18.427h7.049l1.532-1.394v-5.158l-1.379-.976h-37.39l-1.226 1.255v5.297l1.226 1.255h6.589v89.074l1.226 1.255h7.355l89.798-92.699v-4.043l-1.379-1.394H82.39z">
+                                    </path>
+                                    <path
+                                        d="M30.748 108.895h-7.509l-1.226-1.255V18.566h-6.436l-1.379-1.255v-5.436l1.226-1.255h37.544l1.379 1.115v5.297l-1.532 1.533h-7.049v47.952l42.6-43.213v-4.739H81.93l-1.226-1.255v-5.297l1.532-1.533h36.931l1.532 1.533v4.182l-89.951 92.699zm-7.355-.139h7.355l89.645-92.699v-4.043l-1.379-1.394H82.39l-1.379 1.394v5.018l1.226 1.115h6.589v5.158l-43.06 43.771V18.287h7.202l1.379-1.394v-5.158l-1.226-.976H15.577l-1.226 1.115v5.158l1.226 1.115h6.589v89.214l1.226 1.394z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path fill="gray"
+                                        d="M120.7 12.154l1.992-1.115v7.109l-90.411 92.559h-9.654l.919-1.812h7.355l89.645-92.699.153-4.043z">
+                                    </path>
+                                    <path
+                                        d="M32.281 110.847h-9.807l1.073-2.091h7.355l89.491-92.559.153-4.043 2.145-1.255v7.527l-90.411 92.42zm-9.501-.279h9.348l90.411-92.42v-6.97l-1.839.976-.153 4.043-89.645 92.838h-7.355l-.766 1.533z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path fill="gray" d="M88.673 18.427l-1.992 2.091h-5.21l1.226-2.091h5.976z"></path>
+                                    <path
+                                        d="M86.681 20.657h-5.517l1.379-2.37h6.436l-2.299 2.37zm-5.057-.139h5.057l1.839-1.952h-5.67l-1.226 1.952z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path fill="#ccc"
+                                        d="M67.219 70.561s-.153 0-.153.139l-1.686 1.533-.153.139-1.686 4.879c0 .139 0 .279.153.418l1.379 1.394c.153.139.153.139.306.139h5.363c.153 0 .153 0 .306-.139l1.379-1.394.153-.139 1.532-5.158c0-.139 0-.279-.153-.418l-1.226-1.115c-.153-.139-.153-.139-.306-.139h-5.21v-.139zm-9.961 13.8c-.153 0-.306.139-.306.279l-.613 2.649c0 .279.153.418.306.558h3.371l-7.815 22.303c0 .279 0 .418.306.558H64c.153 0 .306-.139.46-.279l.766-2.37c0-.279 0-.418-.306-.558h-2.758l7.815-22.582c0-.279 0-.418-.306-.558H57.259zm36.318.139c-.153 0-.153 0-.153.139l-2.299 2.649h-3.831l-2.452-2.649c0-.139-.153-.139-.306-.139h-9.194c-.153 0-.306.139-.306.279l-.766 2.509c0 .279 0 .418.306.558h2.605l-7.509 22.164c0 .279 0 .418.306.558h9.807c.153 0 .306-.139.306-.279l.766-2.091c0-.279 0-.418-.306-.558h-1.839l4.75-15.055h8.581l-5.517 17.564c0 .279 0 .418.306.558h9.347c.153 0 .306-.139.306-.279l.766-1.952c.153-.139 0-.418-.153-.558h-1.839l4.904-15.334h8.275l-5.517 17.564c0 .279 0 .418.306.558h10.267c.153 0 .306-.139.306-.279l.766-2.091c0-.279 0-.418-.306-.558h-2.145l6.13-19.934v-.418l-1.839-2.509c-.153-.139-.153-.139-.306-.139h-7.202c-.153 0-.153 0-.306.139l-2.299 2.509h-3.984l-2.299-2.649c-.153-.139-.153-.139-.306-.139h-6.13v-.139z">
+                                    </path>
+                                    <path
+                                        d="M63.848 111.683h-11.34c-.153 0-.306 0-.46-.139-.766-.279-1.073-.976-.919-1.673l7.355-21.049h-2.145c-.766-.139-1.226-.976-.919-1.673l.613-2.649c.153-.558.46-.836 1.073-.976h12.259c.153 0 .306 0 .46.139.766.279 1.073.976.919 1.673l-7.355 21.328h1.686c.766.279 1.073.976.919 1.673l-.766 2.37c-.306.558-.766.976-1.379.976zM59.864 86.87h1.379l-7.968 22.861h10.267l.46-1.255h-3.218l7.968-23.14H58.025l-.46 1.533h2.299zm53.48 24.534H102.77c-.766-.279-1.073-.976-.919-1.673l5.21-16.309h-6.283l-4.291 13.382h.306c.153 0 .306 0 .46.139.766.279 1.073 1.115.766 1.812l-.766 1.952c-.153.558-.766.836-1.226.836h-9.654c-.766-.279-1.073-.976-.919-1.673l5.21-16.449h-6.743l-4.137 13.103h.306c.153 0 .306 0 .46.139.766.279 1.073.976.919 1.673l-.766 2.23c-.153.558-.766.836-1.226.976h-9.654c-.153 0-.306 0-.46-.139-.766-.279-1.073-.976-.919-1.673l7.049-20.91H74.42c-.153 0-.306 0-.46-.139-.766-.279-1.073-.976-.919-1.673l.766-2.509c.153-.558.766-.976 1.226-.976h9.041c.306 0 .766.139.919.418l2.299 2.37h2.912l2.145-2.37c.153-.279.46-.418.766-.418h6.129c.306 0 .766.139.919.418l2.145 2.23h3.218l1.992-2.23c.306-.279.613-.418.919-.418h7.202c.46 0 .766.139 1.073.558l1.839 2.509c.306.279.306.836.153 1.255l-5.67 18.679h.766c.153 0 .306 0 .46.139.766.279 1.073.976.766 1.673l-.766 2.23c.153.418-.306.836-.919.836zM77.026 86.87h1.379l-7.662 22.582h8.428l.306-1.115h-2.145l5.363-17.006h10.573l-5.67 18.122h8.122l.306-.836h-2.145l5.517-17.146h10.267l-5.67 18.122h9.041l.46-1.115h-2.452l6.436-20.91-1.532-2.091h-6.743l-2.452 2.649h-4.904l-2.452-2.788h-5.363l-2.452 2.788h-4.597l-2.605-2.788h-8.428l-.46 1.394h1.532zm-6.589-6.83h-5.363c-.306 0-.766-.139-.919-.418l-1.379-1.394c-.306-.418-.46-.976-.306-1.394l1.686-4.879c0-.279.153-.418.306-.558l1.686-1.533c.153-.139.306-.279.613-.279h5.21c.306 0 .613.139.919.418l1.226 1.115c.306.279.46.836.306 1.394L72.89 77.67c0 .279-.153.418-.306.558l-1.379 1.394c0 .279-.46.418-.766.418zm-5.976-2.788l.919.976h4.904l1.073-1.115 1.379-4.739-.766-.697h-4.597l-1.532 1.255-1.379 4.321z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path fill="#ccc"
+                                        d="M67.219 70.98l-1.686 1.533-1.686 4.879 1.379 1.394h5.363l1.379-1.394 1.532-5.158-1.226-1.115h-5.057zm-9.807 13.8l-.613 2.649h3.678l-7.968 22.861h11.34l.766-2.37H61.55l7.968-23.14H57.412zm36.164 0l-2.452 2.788h-4.137l-2.605-2.788h-9.041l-.766 2.509h2.912l-7.662 22.582h9.654l.766-2.091h-2.299l5.057-15.752h9.501l-5.67 17.982h9.194l.766-1.952h-2.299l5.057-16.17h9.041l-5.67 18.122h10.114l.766-2.091h-2.605l6.283-20.352-1.839-2.509h-7.202l-2.452 2.649h-4.444l-2.452-2.788h-5.517z">
+                                    </path>
+                                    <path
+                                        d="M64.001 110.429H52.355l7.968-22.861h-3.678l.766-2.927H69.67l-8.122 23.14h3.065L64 110.43zm-11.34-.279h11.186l.613-2.23h-3.065l7.815-23H57.564l-.613 2.37h3.678l-7.968 22.861zm60.836 0h-10.42l5.67-18.122h-8.888l-5.057 15.891h2.299l-.919 2.23h-9.501l5.67-17.982h-9.194l-4.904 15.612h2.299l-.766 2.37h-9.807l7.662-22.582h-2.912l.919-2.649h9.194l2.605 2.788h3.984l2.452-2.788h5.976l2.452 2.788h4.291l2.452-2.649h7.355l1.992 2.649-6.283 20.213h2.605l-1.226 2.23zm-10.114-.279h9.961l.766-1.952h-2.605l6.283-20.491-1.839-2.509h-7.202l-2.452 2.649h-4.444l-2.452-2.788h-5.67l-2.452 2.788h-4.291l-2.605-2.788h-8.888l-.766 2.23h2.912l-7.662 22.582h9.348l.613-1.952h-2.299l5.057-16.031h9.807l-5.67 17.982h9.041l.766-1.812h-2.145l5.21-16.309h9.348l-5.67 18.4zM70.437 78.786H64.92l-1.379-1.394 1.839-5.018 1.839-1.533h5.057l1.226 1.255-1.532 5.158-1.532 1.533zm-5.363-.139h5.21l1.379-1.394 1.532-5.018-1.073-1.115h-4.904l-1.686 1.394-1.686 4.739 1.226 1.394z">
+                                    </path>
+                                </g>
+                            </svg>
+
+                            <p class="skill-name text--thickness-500">Vim</p>
+                        </div>
+
+                        <div class="skill-entry pad--xsm flex flex--gap-sm flex--x-center flex--y-center">
+                            <div class="flex flex--y-center flex--x-center flex--gap-sm">
+                                <div class="skill-indicator skill--indicator-medium"></div>
+                                <svg viewBox="0 0 128 128" class="skill-icon">
+                                    <path fill="#9B4F96"
+                                        d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z">
+                                    </path>
+                                    <path fill="#68217A"
+                                        d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6zM97 66.2l.9-4.3h-4.2v-4.7h5.1L100 51h4.9l-1.2 6.1h3.8l1.2-6.1h4.8l-1.2 6.1h2.4v4.7h-3.3l-.9 4.3h4.2v4.7h-5.1l-1.2 6h-4.9l1.2-6h-3.8l-1.2 6h-4.8l1.2-6h-2.4v-4.7H97zm4.8 0h3.8l.9-4.3h-3.8l-.9 4.3z">
+                                    </path>
+                                </svg>
+
+                            </div>
+                            <p class="skill-name text--thickness-500">C#</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education section-spacing">
+            <div class="container flex flex-layout--column flex--gap-xlg-2 flex--y-center">
+                <p class="education-header header-pt text--thickness-600 flex flex--gap-sm flex--y-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 header-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    </svg>
+                    Educational Background
+                </p>
+                <div class="timeline grid grid--2-cols pos-relative">
+                    <div class="education-node pos-relative flex flex-layout--column">
+                        <div class=" institution">
+                            <p class="year-name">2021 - 2025 &bullet; STI College Las Piñas</p>
+                        </div>
+                        <p>Bachelor of Science in Computer Science</p>
+                    </div>
+                    <div class="education-node pos-relative flex flex-layout--column">
+                        <div class="institution">
+                            <p class="year-name">2019 - 2021 &bullet; STI College Las Piñas</p>
+                        </div>
+                        <p>Information and Communication Technology (ICT)</p>
+                    </div>
+                    <div class="education-node pos-relative flex flex-layout--column">
+                        <div class="institution">
+                            <p class="year-name">2015 - 2019 &bullet; Saint Francis of Assisi College</p>
+                        </div>
+                        <p>Junior High School</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-spacing">
+            <div class="container contact-container grid grid--2-cols">
+                <p class="header-pt text--thickness-600 flex flex--y-center flex--gap-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 header-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Contact Me
+                </p>
+                <form class="contact-form flex flex-layout--column flex--gap-sm">
+                    <div class="form-component--field flex flex-layout--column flex--gap-sm">
+                        <label for="contact--name-field">Name</label>
+                        <input class="pad--xsm" name="sender-name" type="text" required id="contact--name-field"
+                            placeholder="e.g. James Bernard Udal">
+                        <p class="error-text element--hide">Invalid name. Please check your inputs and try again.</p>
+                    </div>
+
+                    <div class="form-component--field flex flex-layout--column flex--gap-sm">
+                        <label for="contact--email-field">Email</label>
+                        <input class="pad--xsm" name="sender-email" type="email" required id="contact--email-field"
+                            placeholder="e.g. myemailadd@mail.com">
+                        <p class="error-text element--hide">Invalid email. Please check your inputs and try again.</p>
+                    </div>
+                    <div class="form-component--field flex flex-layout--column flex--gap-sm">
+                        <label for="contact--message-field">Your message</label>
+                        <textarea class="pad--xsm message-area"
+                            placeholder="Anything you want to say, but please keep it civil. Thank you." required
+                            name="sender-message" id="contact--message-field">
+                        </textarea>
+                        <p class="error-text element--hide">Please type a message.</p>
+                    </div>
+                    <button class="form-component--button-submit">Submit</button>
+                </form>
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="894.24907"
+                    class="contact-presentation" height="448.2822" viewBox="0 0 894.24907 448.2822" role="img"
+                    artist="Katerina Limpitsouni" source="https://undraw.co/">
+                    <path
+                        d="M447.36954,674.1411q-40.47485,0-80.82885-1.44922c-38.44043-1.38086-78.18993-2.80762-115.13556-23.29883-25.84506-14.333-48.73487-37.3291-66.19418-66.50391a223.77042,223.77042,0,0,1-25.36927-63.60449,261.47594,261.47594,0,0,1,.95286-123.77929,219.83406,219.83406,0,0,1,14.7411-40.40039c26.94295-55.79346,76.08491-93.2461,134.82585-102.75391a6.80653,6.80653,0,0,1,1.463-.03125c.26419.01416.52753.0293.796.01807l.3456-.10987a16.88152,16.88152,0,0,1,2.72076-.69824c90.59405-13.48682,186.365,13.80176,276.95228,78.91357,70.04208,50.35108,162.86753,77.46436,283.78131,82.88916l1.71659.08985c33.6596,1.93359,66.21835,15.81054,94.16038,40.13281,27.57946,24.00586,48.28706,56.03418,59.88378,92.624,1.42568,4.46094,2.73262,9.1045,3.88437,13.80079a26.0388,26.0388,0,0,1-6.941,24.69042v.00879l-.30109.30957c-.72471.72071-1.48759,1.41211-2.26743,2.05567l-.91682.75586c-7.72718,6.36523-13.83023,11.39355-21.13462,15.29883a64.98321,64.98321,0,0,1-15.41875,5.82128c-29.46525,7.1836-59.38763,13.84375-88.936,19.79688-57.3848,11.57031-116.28137,21.11523-175.05411,28.36816A2269.14089,2269.14089,0,0,1,447.36954,674.1411Zm-136.232-419.84522a3.50685,3.50685,0,0,0-.5394.03662c-58.19178,9.41895-106.86855,46.50391-133.54434,101.74512a217.62434,217.62434,0,0,0-14.59523,40,259.18846,259.18846,0,0,0-.941,122.68067,221.62191,221.62191,0,0,0,25.12332,62.99609c17.28842,28.88867,39.94414,51.6543,65.51823,65.83594,36.614,20.30761,76.17609,21.72851,114.43587,23.10156a2266.31375,2266.31375,0,0,0,358.31544-15.59473c58.73458-7.249,117.593-16.78711,174.94-28.35058,29.52843-5.94825,59.43-12.60352,88.87535-19.78321a63.35819,63.35819,0,0,0,15.04728-5.67871c7.15725-3.82617,13.20219-8.80664,20.85517-15.11133l.91681-.75488c.67044-.55371,1.32858-1.14551,1.9583-1.76074l.18065-.18945c6.2892-6.33887,8.73475-14.70215,6.70987-22.94434v-.001c-1.13944-4.64648-2.4324-9.24023-3.84366-13.65527-23.69-74.74609-84.97359-127.56934-152.49635-131.44727l-1.70726-.08984c-55.23185-2.47851-103.56386-9.34375-147.75156-20.99023-52.74984-13.90235-98.80127-34.83008-136.87574-62.20069-90.24209-64.8623-185.61273-92.04931-275.81114-78.62646a15.47307,15.47307,0,0,0-2.47862.64258l-.62294.17431a9.37442,9.37442,0,0,1-1.06184-.01269C311.53655,254.30663,311.3347,254.29588,311.13751,254.29588Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#f0f0f0" />
+                    <path
+                        d="M432.2022,371.9146c-2.498-2.39659-5.05306-15.76155-8.24216-17.11834,2.38389,5.2686.65305,6.66348.64035,12.44567a39.12306,39.12306,0,0,1-1.14125,9.74477H369.435V334.82486a28.84672,28.84672,0,0,1,28.84757-28.84758,17.21385,17.21385,0,0,1,4.27584.626A27.42847,27.42847,0,0,1,421.909,326.0071C426.02756,341.06071,432.57759,366.11854,432.2022,371.9146Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#2f2e41" />
+                    <path
+                        d="M372.605,423.78163l.02663-32.86268L353.314,392.64521l6.81759,20.7264-3.19073,52.09644a8.17282,8.17282,0,1,0,9.88987,6.88859Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#ffb6b6" />
+                    <polygon points="257.746 432.76 265.55 432.759 269.263 402.657 257.744 402.657 257.746 432.76"
+                        fill="#ffb6b6" />
+                    <path
+                        d="M407.97822,654.76874l12.33707-.73635v5.28573l11.7292,8.10061a3.30167,3.30167,0,0,1-1.87612,6.01864H415.48062L412.949,668.209l-.98849,5.2284h-5.53786Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#2f2e41" />
+                    <polygon points="212.62 432.76 220.425 432.759 224.137 402.657 212.619 402.657 212.62 432.76"
+                        fill="#ffb6b6" />
+                    <path
+                        d="M362.85281,654.76874l12.33707-.73635v5.28573l11.72919,8.10061a3.30167,3.30167,0,0,1-1.87612,6.01864H370.35521l-2.53166-5.2284-.98848,5.2284H361.2972Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#2f2e41" />
+                    <path
+                        d="M403.67163,355.43027l-16.16732.317-11.41223,12.04624-9.14932,1.3419a18.2656,18.2656,0,0,0-15.57717,16.89718v0l1.585,8.70644h9.51019l5.50164,32.30284c-2.13925,5.4511-2.28468,9.75391,2.10651,11.444l13.63127,25.67751L423.96,446.09408c2.04173-3.51013,2.696-7.03574.609-10.46423l2.87806-49.45h9.67743v0c0-9.24869-3.12837-17.04569-12.31963-18.07484a108.65383,108.65383,0,0,0-10.98908-.62852Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#e6e6e6" />
+                    <path
+                        d="M423.96,446.09408s-39.30879,6.97414-53.89108-7.60815c0,0-1.48046,2.51333-3.71127,6.68153-.64153,1.19868-1.88058,2.0107-2.62886,3.46267-.68006,1.31961-2.4292,2.94192-3.17006,4.43857-.596,1.204.36014,2.77744-.26,4.07817-7.46789,15.66368-16.19278,37.75861-14.32228,52.34848,1.20624,9.40867,3.69764,31.30177,6.32152,54.81615.205,1.83719-1.45549,4.19725-1.24942,6.04906.19432,1.74621,2.25519,2.98365,2.44951,4.73391.129,1.16211-1.31017,2.34755-1.18148,3.50826.14118,1.27343,1.8502,2.52186,1.99063,3.79039,3.59444,32.46814,6.88554,62.78094,6.88554,62.78094h18.38637l3.46913-69.2317-2.83512-25.23619,6.65714-51.038,9.19318,48.502,1.18261,27.29716,9.71542,70.9748H423.96v-68.708l1.268-3.56944-1.268-4.57787,1.268-4.93232-1.268-5.37164Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#2f2e41" />
+                    <path
+                        d="M408.634,346.05478a18.326,18.326,0,1,1,3.17509-15.31446c.05272.21964.09718.43807.14038.66481A18.301,18.301,0,0,1,408.634,346.05478Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#ffb6b6" />
+                    <path
+                        d="M404.81288,335.59833a9.633,9.633,0,0,0-2.815-5.10383,13.1421,13.1421,0,0,1-.76086,5.50961,25.3951,25.3951,0,0,1-13.95455-2.76428c-3.23345-2.19366-7.34819-2.00351-12.14136,0a17.75012,17.75012,0,0,1,17.75236-17.75236h3.17006a17.75559,17.75559,0,0,1,17.75235,17.75236A52.85225,52.85225,0,0,1,404.81288,335.59833Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#2f2e41" />
+                    <circle cx="113.24907" cy="285" r="51" fill="#f0f0f0" />
+                    <circle cx="438.24907" cy="51" r="51" fill="#f0f0f0" />
+                    <circle cx="843.24907" cy="293" r="51" fill="#f0f0f0" />
+                    <path
+                        d="M683.12454,282.42068V398.06673A9.11863,9.11863,0,0,1,674.101,407.186a.80182.80182,0,0,1-.09986.00416H660.54129a40.6065,40.6065,0,0,1-40.6065-40.6065v-84.163a9.12338,9.12338,0,0,1,9.12338-9.12338l5.454,0c-2.52672,7.37064,31.7654,10.47377,33.648,0l5.841,0A9.12341,9.12341,0,0,1,683.12454,282.42068Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#6c63ff" />
+                    <path
+                        d="M643.18162,264.64967a1.19706,1.19706,0,0,1,1.19565-1.19566h8.13043a1.19566,1.19566,0,0,1,0,2.39131h-8.13043A1.19706,1.19706,0,0,1,643.18162,264.64967Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#3f3d56" />
+                    <path
+                        d="M676.79446,421.8589h-51.416a15.06329,15.06329,0,0,1-15.04639-15.0459V325.9717a2.18651,2.18651,0,0,1-.91113-1.77881v-8.13037a2.18557,2.18557,0,0,1,.91113-1.77832v-2.18213a2.1856,2.1856,0,0,1-.91113-1.77832v-8.13086a2.18557,2.18557,0,0,1,.91113-1.77832v-3.94385a2.18353,2.18353,0,0,1-1.15039-1.92969v-8.13037a2.1843,2.1843,0,0,1,1.15039-1.93018V273.67384A15.06329,15.06329,0,0,1,625.37844,258.628h51.416a15.06288,15.06288,0,0,1,15.0459,15.04589V297.23a1.8859,1.8859,0,0,1,.88574,1.59814v15.50293a1.88674,1.88674,0,0,1-.88574,1.59863V406.813A15.06288,15.06288,0,0,1,676.79446,421.8589ZM625.37844,260.628a13.061,13.061,0,0,0-13.04639,13.04589v12.50782l-.96191.03711a.19547.19547,0,0,0-.18848.19189V294.541a.19617.19617,0,0,0,.18848.1919l.96191.03662v7.04931l-.76074.1875a.19651.19651,0,0,0-.15039.18653v8.13086a.19651.19651,0,0,0,.15039.18652l.76074.1875v4.99072l-.76074.1875a.19651.19651,0,0,0-.15039.18653v8.13037a.19664.19664,0,0,0,.15039.187l.76074.1875V406.813a13.061,13.061,0,0,0,13.04639,13.0459h51.416a13.0609,13.0609,0,0,0,13.0459-13.0459V314.2173h.88574V298.9424h-.88574V273.67384a13.06089,13.06089,0,0,0-13.0459-13.04589Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#3f3d56" />
+                    <circle cx="504.1757" cy="38.79076" r="1.19565" fill="#3f3d56" />
+                    <path
+                        d="M396.95559,496.26173H263.16848a7.18838,7.18838,0,0,1-7.16992-7.16894v-65.189a7.1884,7.1884,0,0,1,7.16894-7.16992H396.95461a7.18841,7.18841,0,0,1,7.16993,7.16895v65.189A7.1884,7.1884,0,0,1,396.95559,496.26173Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#fff" />
+                    <path
+                        d="M396.95559,496.26173H263.16848a7.18838,7.18838,0,0,1-7.16992-7.16894v-65.189a7.1884,7.1884,0,0,1,7.16894-7.16992H396.95461a7.18841,7.18841,0,0,1,7.16993,7.16895v65.189A7.1884,7.1884,0,0,1,396.95559,496.26173ZM263.16848,418.7339a5.18526,5.18526,0,0,0-5.16992,5.1709v65.187a5.18494,5.18494,0,0,0,5.1709,5.16992H396.95364a5.18515,5.18515,0,0,0,5.1709-5.17089v-65.187a5.18527,5.18527,0,0,0-5.1709-5.16992Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#3f3d56" />
+                    <path
+                        d="M337.23235,486.62784c-26.38574,0-53.89882-.25214-64.16427-.41561a5.17627,5.17627,0,0,1-5.06954-5.15521V427.09538a1.82954,1.82954,0,0,1,1.823-1.82756H390.29728a1.82942,1.82942,0,0,1,1.82726,1.8227v36.612a22.84157,22.84157,0,0,1-22.45691,22.75218C360.10027,486.57927,348.7713,486.62784,337.23235,486.62784Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#6c63ff" />
+                    <path
+                        d="M383.146,460.33888H274.28664a4.43849,4.43849,0,0,1-4.16406-2.93554l-12.32129-34.56641a4.4228,4.4228,0,0,1,4.15772-5.90674l136.07226-.18945a4.42312,4.42312,0,0,1,4.35938,5.19775l.105.04444-.39063.91162-.0039.00927-14.895,34.75538A4.40962,4.40962,0,0,1,383.146,460.33888Zm14.8916-41.59814-136.07471.18945a2.42256,2.42256,0,0,0-2.27783,3.23535l12.3208,34.56494a2.43347,2.43347,0,0,0,2.28223,1.6084H383.146a2.4131,2.4131,0,0,0,2.22168-1.46679l14.89551-34.75635.73242.314-.73242-.314a2.42117,2.42117,0,0,0-2.22559-3.375Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#3f3d56" />
+                    <circle cx="176.98309" cy="233.4802" r="8.52402" fill="#fff" />
+                    <circle cx="498.98309" cy="159.4802" r="8.52402" fill="#fff" />
+                    <path
+                        d="M974.25454,508.9789l-22.77-22.48a11.884,11.884,0,0,0-8.43-3.46h-.08a11.9143,11.9143,0,0,0-8.46,3.56,27.99135,27.99135,0,0,0-.49,38.84c.24.26.49.51.74.76a27.248,27.248,0,0,0,4.56,3.65,27.67639,27.67639,0,0,0,15.11,4.43h.17a27.82649,27.82649,0,0,0,19.75-8.32,12.023,12.023,0,0,0-.1-16.98Zm-1.32,15.57a26.09171,26.09171,0,0,1-32.76,3.48,26.78641,26.78641,0,0,1-4.01-3.25,26.00168,26.00168,0,0,1-.23-36.77,9.91308,9.91308,0,0,1,7.06-2.97h.06a9.911,9.911,0,0,1,7.02,2.88l22.77,22.49a10.00707,10.00707,0,0,1,.09,14.14Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#3f3d56" />
+                    <path
+                        d="M899.54452,435.19887l-22.77-22.49a11.92636,11.92636,0,0,0-8.43-3.46h-.07a11.947,11.947,0,0,0-8.47,3.56994,28.07691,28.07691,0,0,0-4.72,33l.01.01a27.562,27.562,0,0,0,4.33,5.93c.19.22.41.44.63.66a27.83532,27.83532,0,0,0,19.67,8.08h.18a27.854,27.854,0,0,0,19.75-8.33,11.99892,11.99892,0,0,0-.11-16.97Zm-1.32,15.57a25.85541,25.85541,0,0,1-18.33,7.73h-.17a26.00049,26.00049,0,0,1-18.49-44.27,10.00761,10.00761,0,0,1,14.14-.09l22.77,22.48A10.01911,10.01911,0,0,1,898.22451,450.76888Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#3f3d56" />
+                    <path
+                        d="M975.70994,516.04649l-25.1032-24.79357a8.72678,8.72678,0,0,0-12.32743.0765,22,22,0,1,0,31.30516,30.919Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#6c63ff" />
+                    <path
+                        d="M901.00443,442.26243l-25.1032-24.79356a8.72676,8.72676,0,0,0-12.32743.0765,22,22,0,1,0,31.30516,30.919Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#6c63ff" />
+                    <path
+                        d="M948.12454,531.48891l-.6,1.57995q-4.23-1.60491-8.2-3.22c-46.88-19.13-69.26-41.52-84.23-84.02l-.01-.01q-1.065-3-2.07-6.13995l1.58-.51a25.54187,25.54187,0,0,0,2.3,5.78q1.23,3.495,2.53,6.81c14.07,35.87,34.82,56.37,74.6,73.68q3,1.30507,6.15,2.59A26.08663,26.08663,0,0,0,948.12454,531.48891Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#3f3d56" />
+                    <rect x="900.62305" y="448.539" width="2.00052" height="73.00017"
+                        transform="translate(-229.92517 559.82386) rotate(-45.35527)" fill="#3f3d56" />
+                    <path
+                        d="M436.64029,416.17348l.02662-32.86269-19.31762,1.72627,6.81759,20.7264-24.74716,37.51415a8.17278,8.17278,0,1,0,9.88987,6.88859Z"
+                        transform="translate(-152.87546 -225.8589)" fill="#ffb6b6" />
+                </svg>
+            </div>
+        </section>
+        <footer class="flex flex--x-center flex--y-center">
+            <p>🎉Made by James Bernard Udal</p>
+        </footer>
+        <div class=" snackbar--notif-submit snackbar--display-hide">
+            <p class="notif-text">Your message has been submitted! Thank you.</p>
+        </div>
+    </main>
+</body>
+
+</html>

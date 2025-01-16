@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #f8f9fa; /* formerly --white-bg*/
+    --color-black: #343a40; /* formerly --black-bg */
+    --color-black-subtle: rgba(52, 58, 64, 0.103);
+    --primary-color: #5c7cfa;
+    --primary-color-backdrop: #4a63c8;
+    --strong-primary: #253264;
+    --medium-strong-primary: #4057af;
+    --medium-primary: #6c89fb;
+    --light-primary: #a6c1ff;
+    --very-light-primary: rgba(239, 242, 255, .2);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--x-center {
+    justify-items: center;
+}
+
+.grid--y-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--x-center {
+    justify-content: center;
+}
+
+.flex--y-center {
+    align-items: center;
+}
+
+.flex-layout--column {
+    flex-direction: column;
+}
+
+.flex-layout--row {
+    flex-direction: row;
+}
+
+.flex--gap.xsm {
+    gap: .6rem;
+}
+.flex--gap-sm {
+    gap: 1.2rem;
+}
+.flex--gap-md {
+    gap: 2.4rem;
+}
+.flex--gap-lg {
+    gap: 4.8rem;
+}
+
+.flex--gap-xlg {
+    gap: 6.4rem;
+}
+
+.flex--gap-xlg-2 {
+    gap: 9.6rem;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.pad--xsm {
+    padding: 1.2rem;
+}
+
+.pad--sm {
+    padding: 2.4rem;
+}
+
+.pad--md{
+    padding: 4.8rem
+}
+
+.pad--lg {
+    padding: 9.6rem;
+}
+
+.header-pt {
+    font-size: 4.4rem;
+}
+
+.text-pt {
+    font-size: 1.7rem;
+}
+
+.line-height--15 {
+    line-height: 1.5;
+}
+
+.section-spacing {
+    padding-block: 9.6rem;
+    padding-inline: 4.8rem;
+}
+
+.text--align-center {
+    text-align: center;
+}
+
+.text--thickness-600 {
+    font-weight: 600;;
+}
+
+.text--thickness-500 {
+    font-weight: 500;
+}
+

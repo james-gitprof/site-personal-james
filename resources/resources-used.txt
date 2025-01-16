@@ -1,0 +1,16 @@
+For colors, I used:
+
+https://yeun.github.io/open-color/
+
+For background pattern(s), I used:
+
+https://heropatterns.com/
+
+For icons, I used:
+
+https://heroicons.com/
+https://devicon.dev/
+
+For illustrations, I used
+https://undraw.co/
+
