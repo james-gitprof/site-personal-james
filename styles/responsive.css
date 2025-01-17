@@ -17,14 +17,18 @@
         font-size: 56.25%;
     }
 
-    .text-pt {
+    /* .text-pt {
         font-size: 1.8rem;
-    }
+    } */
 
     .familiarity-levels {
         flex-direction: row;
         justify-content: flex-start;
         gap: 3.6rem;
+    }
+
+    .legend-familiarity {
+        font-size: 1.8rem;
     }
 
     .skill-grid {
@@ -38,7 +42,7 @@
     }
 
     .timeline::before {
-        left: -3rem;   
+        left: -2.9rem;   
     }
 
     .education-node:nth-child(even)::before {
@@ -62,9 +66,85 @@
         grid-column: auto;
     }
 
+    .familiarity-levels {
+        flex-wrap: wrap;
+    }
+
 }
 
-/* 704px */
+/* 672px */
 @media (max-width: 44em) {
+    html {
+        font-size: 50%;
+    }
 
+    .introduction {
+        font-size: 6.8rem;
+    }
+
+    .hero .job-role {
+        font-size: 4.2rem;
+    }
 }
+
+/* 528px */
+@media (max-width: 33em) {
+    .hero .job-role {
+        font-size: 3.8rem;
+    }
+
+    html {
+        font-size: 43.75%;
+    }
+
+    .dev-portrait {
+        max-width: 40%;
+    }
+}
+
+/* 400px */
+@media (max-width: 25em) {
+    .hero-btn {
+        padding-inline: 1.6rem;
+    }
+
+    .header-pt {
+        font-size: 3.6rem;
+    }
+
+    .hero-btn-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-content-container {
+        align-items: stretch;
+    }
+
+    .introduction {
+        font-size: 6.2rem;
+    }
+
+    .hero .job-role {
+        font-size: 3.2rem;
+    }
+
+    .dev-portrait {
+        max-width: 50%;
+    }
+}
+
+
+/* @media(max-width: 24em) {
+    .header-pt {
+        font-size: 2.8rem;
+    }
+
+    .introduction {
+        font-size: 5.3rem;
+    }
+
+    .hero .job-role {
+        font-size: 2.2rem;
+    }
+} */
