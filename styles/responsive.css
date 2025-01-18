@@ -142,10 +142,12 @@
 
     .introduction {
         font-size: 5.2rem;
+        text-align: center;
     }
 
     .hero .job-role {
         font-size: 3rem;
+        text-align: center;
     }
 
 }
