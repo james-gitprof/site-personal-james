@@ -106,9 +106,15 @@ class App {
         contactForm.addEventListener("submit", function(e) {
             e.preventDefault();
             this._contactFields.forEach(field => field.value = "");
+
+            // Shows the element, will cause an animation to play due to transitions
             this._showElement(snackbar, "snackbar--display-hide");
-            // wait 3 seconds before hiding the snackbar
-            this._wait(2).then(() => this._hideElement(snackbar, "snackbar--display-hide"));
+
+            // Check if the animations are finished on snackbar
+            // Then wait for 1.5 seconds before hiding the element
+            Promise.all(snackbar.getAnimations().map(anim => anim.finished))
+            .then(() => this._wait(1.5))
+            .then(() => this._hideElement(snackbar, "snackbar--display-hide")) ;
         }.bind(this));
     }
 

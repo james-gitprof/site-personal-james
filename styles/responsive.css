@@ -8,6 +8,8 @@
     .dev-portrait {
         max-width: 30%;
     }
+
+
 }
 
 /* 928px */
@@ -87,8 +89,8 @@
     }
 }
 
-/* 528px */
-@media (max-width: 33em) {
+/* 544px */
+@media (max-width: 34em) {
     .hero .job-role {
         font-size: 3.8rem;
     }
@@ -99,6 +101,10 @@
 
     .dev-portrait {
         max-width: 45%;
+    }
+
+    .notif-text {
+        font-size: 1.6rem;
     }
 }
 
@@ -150,4 +156,7 @@
         text-align: center;
     }
 
+    .notif-text {
+        font-size: 1.6rem;
+    }
 }
