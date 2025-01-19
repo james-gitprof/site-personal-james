@@ -138,7 +138,7 @@ class App {
                 await this._wait(1.5);
                 this._hideElement(snackbar, "snackbar--display-hide");
             } catch (err) {
-                console.error(err);
+                console.error(err.message);
                 console.error(err.stack);
                 alert("An error has occured.");
             }
