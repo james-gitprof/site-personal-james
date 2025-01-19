@@ -18,6 +18,7 @@ class App {
 
     */
     constructor() {
+        this._resetScrollPos();
         this._heroAnimator()
         this._initFields();
         this._initEducationSpacer();
@@ -25,6 +26,10 @@ class App {
         this._initHeroButtonEvents();
         this._initScrollReveal();
         this._contactFields;
+    }
+
+    _resetScrollPos() {
+        window.addEventListener('beforeunload', () => window.scrollTo({ top: 0 }));
     }
 
     _heroAnimator() {
@@ -38,25 +43,31 @@ class App {
         this._wait(0.2).then(() => heroComponents.forEach(el => this._showElement(el, "element--hide-sliding")));
     }
 
-    _wait(seconds)  {
+    _wait(seconds) {
         return new Promise(resolve => setTimeout(resolve, seconds * 1000));
     }
 
     // add event listeners on buttons at the hero section
     _initHeroButtonEvents() {
-        heroContainer.addEventListener('click', function(e){
-            // e.preventDefault(); <-- Disabled because it interferes with the behavior of anchor tags
-            if(e.target.dataset.btnHero === 'contact') {
-                const {top: elementTopRelative} = contactForm.closest("section").getBoundingClientRect();
-                const targetElementY = window.scrollY + elementTopRelative;
-                window.scrollTo({top: targetElementY, behavior: "smooth"});
+        heroContainer.addEventListener('click', function (e) {
+            const button = e.target.closest("a");
+            if (!button.classList.contains("social-link")) {
+                e.preventDefault();
             }
-        });
+            if (button.dataset.btnHero === 'contact') {
+                const { top: contactFormTop } = contactForm.closest("section").getBoundingClientRect();
+                this._scrollTo(contactFormTop);
+            }
+            if (button.dataset.btnHero === "scrollAbout") {
+                const { top: aboutMeTop } = sectionAboutMe.getBoundingClientRect();
+                this._scrollTo(aboutMeTop);
+            }
+        }.bind(this));
+    }
 
-        floatingScrollCta.addEventListener('click', function(e) {
-            const targetElementY = window.scrollY + sectionAboutMe.getBoundingClientRect().top;
-            window.scrollTo({top: targetElementY, behavior: "smooth"});
-        });
+    _scrollTo(elementTopRelativeCoords) {
+        const targetElementY = window.scrollY + elementTopRelativeCoords;
+        window.scrollTo({ top: targetElementY, behavior: "smooth" });
     }
 
     // adds empty grid items on educational background section to give an alternating look
@@ -85,7 +96,7 @@ class App {
     _initFormListeners() {
         this._contactFields.forEach(field => {
             // override default message with my own if there any errors
-            field.addEventListener('invalid', function(e) {
+            field.addEventListener('invalid', function (e) {
                 e.preventDefault();
                 const parent = e.currentTarget.closest(".form-component--field");
                 const errorElement = parent.querySelector(".error-text");
@@ -94,7 +105,7 @@ class App {
         });
 
         // clear any error text (if present) if any field element is on focus
-        contactForm.addEventListener('focusin', function(e) {
+        contactForm.addEventListener('focusin', function (e) {
             const isFieldFocused = this._contactFields.some(field => field === e.target);
             if (isFieldFocused === false) { return; }
             const fieldParent = this._contactFields.find(field => field === e.target).parentElement;
@@ -103,7 +114,7 @@ class App {
         }.bind(this));
 
         // display snackbar when form submits
-        contactForm.addEventListener("submit", function(e) {
+        contactForm.addEventListener("submit", function (e) {
             e.preventDefault();
             this._contactFields.forEach(field => field.value = "");
 
@@ -113,33 +124,33 @@ class App {
             // Check if the animations are finished on snackbar
             // Then wait for 1.5 seconds before hiding the element
             Promise.all(snackbar.getAnimations().map(anim => anim.finished))
-            .then(() => this._wait(1.5))
-            .then(() => this._hideElement(snackbar, "snackbar--display-hide")) ;
+                .then(() => this._wait(1.5))
+                .then(() => this._hideElement(snackbar, "snackbar--display-hide"));
         }.bind(this));
     }
 
     // hide sections; reveal section elements on scroll
     _initScrollReveal() {
         const sections = document.querySelectorAll("section");
-        const observer = new IntersectionObserver(this._scrollCallback.bind(this), {root: null, threshold: .35});
+        const observer = new IntersectionObserver(this._scrollCallback.bind(this), { root: null, threshold: .35 });
         sections.forEach(section => {
             this._hideElement(section, "section--hide");
             observer.observe(section);
         });
     }
 
-    _hideElement(el, classToAdd="element--hide") {
+    _hideElement(el, classToAdd = "element--hide") {
         el.classList.add(classToAdd);
     }
 
-    _showElement(el, classToRemove="element--hide") {
+    _showElement(el, classToRemove = "element--hide") {
         el.classList.remove(classToRemove);
     }
 
     // callback for the observer
     _scrollCallback(entries, observer) {
         const [observedEntry] = entries;
-        const {isIntersecting, target: targetElement} = observedEntry;
+        const { isIntersecting, target: targetElement } = observedEntry;
         // unhide sections if they are 35% visible in the viewport
         if (isIntersecting) {
             this._showElement(targetElement, "section--hide");

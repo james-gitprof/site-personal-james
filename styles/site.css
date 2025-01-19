@@ -336,6 +336,19 @@ footer {
     font-weight: 600;
 }
 
+.footer-link {
+    color: var(--color-black);
+    transition: all .3s;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-link:active {
+    color: var(--color-black);
+}
+
 /* ========== Snackbar (on form submit) ========== */
 
 .snackbar--notif-submit {
