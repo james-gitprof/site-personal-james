@@ -2,8 +2,7 @@
 
 This repository will serve as a remote backup for the site.
 
-As of this writing, it is currently work in progress.
-Planned hosting for site will be on Netlify to handle form responses.
+The site is currently hosted at netlify. [Link](https://udaljamesbernard.netlify.app/)
 
 ## Setup
 
