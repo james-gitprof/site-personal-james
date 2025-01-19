@@ -123,7 +123,7 @@ class App {
                 const formBody = new URLSearchParams(formData).toString();
                 const sendFormData = fetch("/", {
                     method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-url-encoded" },
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     body: formBody
                 })
                 await sendFormData();
