@@ -114,18 +114,34 @@ class App {
         }.bind(this));
 
         // display snackbar when form submits
-        contactForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            this._contactFields.forEach(field => field.value = "");
+        contactForm.addEventListener("submit", async function (e) {
+            try {
+                e.preventDefault();
 
-            // Shows the element, will cause an animation to play due to transitions
-            this._showElement(snackbar, "snackbar--display-hide");
+                const form = e.target;
+                const formData = new FormData(form);
+                const formBody = new URLSearchParams(formData).toString();
+                const sendFormData = fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: formBody
+                })
+                await sendFormData();
+                this._contactFields.forEach(field => field.value = "");
 
-            // Check if the animations are finished on snackbar
-            // Then wait for 1.5 seconds before hiding the element
-            Promise.all(snackbar.getAnimations().map(anim => anim.finished))
-                .then(() => this._wait(1.5))
-                .then(() => this._hideElement(snackbar, "snackbar--display-hide"));
+                // Shows the element, will cause an animation to play due to transitions
+                this._showElement(snackbar, "snackbar--display-hide");
+
+                // Check if the animations are finished on snackbar
+                // Then wait for 1.5 seconds before hiding the element
+                await Promise.all(snackbar.getAnimations().map(anim => anim.finished));
+                await this._wait(1.5);
+                this._hideElement(snackbar, "snackbar--display-hide");
+            } catch (err) {
+                console.error(err);
+                console.error(err.stack);
+                alert("An error has occured.");
+            }
         }.bind(this));
     }
 
