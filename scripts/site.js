@@ -121,12 +121,12 @@ class App {
                 const form = e.target;
                 const formData = new FormData(form);
                 const formBody = new URLSearchParams(formData).toString();
-                const sendFormData = fetch("/", {
+                await fetch("/", {
                     method: "POST",
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     body: formBody
-                })
-                await sendFormData();
+                });
+
                 this._contactFields.forEach(field => field.value = "");
 
                 // Shows the element, will cause an animation to play due to transitions
@@ -138,7 +138,7 @@ class App {
                 await this._wait(1.5);
                 this._hideElement(snackbar, "snackbar--display-hide");
             } catch (err) {
-                console.error(err);
+                console.error(err.message);
                 console.error(err.stack);
                 alert("An error has occured.");
             }
