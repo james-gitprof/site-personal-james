@@ -1,0 +1,42 @@
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-white: #1b1c25;
+        --color-black: #f8f9fa;
+        --primary-color: #3a447c;
+        --medium-primary: #3a447c;
+    }
+
+    .role-text {
+        background-color: var(--color-black);
+    }
+
+    .hero-btn {
+        color: var(--color-black);
+    }
+    
+    .section-dev-skills {
+        background-color: var(--color-white);
+    }
+
+    .education-node {
+        color: var(--color-black);
+    }
+
+    .contact-form .form-component--button-submit {
+        color: var(--color-black);
+    }
+
+    .contact-presentation--dark {
+        display: block;
+    }
+
+    .contact-presentation {
+        display: none;
+    }
+
+    .contact-presentation--dark {
+        display: block;
+    }
+
+}
