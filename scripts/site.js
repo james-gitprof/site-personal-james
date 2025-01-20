@@ -51,7 +51,7 @@ class App {
     _initHeroButtonEvents() {
         heroContainer.addEventListener('click', function (e) {
             const button = e.target.closest("a");
-            if (!button.classList.contains("social-link")) {
+            if (!button.classList.contains("social-link") && !button.dataset.btnHero === "resume") {
                 e.preventDefault();
             }
             if (button.dataset.btnHero === 'contact') {
