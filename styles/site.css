@@ -147,14 +147,8 @@
 }
 
 .skill-grid {
-    grid-template-columns: .6fr 1.4fr;
+    grid-template-columns: 1fr;
     column-gap: 4.8rem;
-}
-
-.legend-familiarity {
-    font-size: 2rem;
-    padding: 1rem;
-    border-radius: 1.2rem;
 }
 
 .skill-icon {

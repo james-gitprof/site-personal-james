@@ -25,16 +25,6 @@
         gap: 3.6rem;
     }
 
-    .legend-familiarity {
-        font-size: 1.8rem;
-    }
-
-    .skill-grid {
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        row-gap: 8rem;
-    }
-
     .timeline {
         grid-template-columns: 1fr;
     }
