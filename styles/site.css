@@ -315,9 +315,13 @@
     margin-block-start: 1.6rem;
 }
 
-.contact-presentation {
+.contact-presentation, .contact-presentation--dark {
     height: 100%;
     width: 100%;
+}
+
+.contact-presentation--dark {
+    display: none;
 }
 
 /* ========== FOOTER ========== */
@@ -381,7 +385,7 @@ section {
 }
 
 .force-animate {
-    transition: transform .7s, opacity .7s;
+    transition: transform .7s, opacity .7s, color .3s;
 }
 
 .element--hide-sliding {
@@ -398,6 +402,7 @@ section {
 .section--hide {
     transform: translateY(2rem);
 }
+
 
 
 
