@@ -385,7 +385,7 @@ section {
 }
 
 .force-animate {
-    transition: transform .7s, opacity .7s;
+    transition: transform .7s, opacity .7s, color .3s;
 }
 
 .element--hide-sliding {

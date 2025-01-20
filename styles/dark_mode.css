@@ -39,4 +39,8 @@
         display: block;
     }
 
+    .scroll-cta:hover {
+        color: var(--light-primary);
+    }
+
 }
