@@ -7,6 +7,10 @@
         --medium-primary: #3a447c;
     }
 
+    .section-about-me {
+        border-block-end: .2rem solid var(--primary-color);
+    }
+
     .role-text {
         background-color: var(--color-black);
     }
@@ -42,5 +46,4 @@
     .scroll-cta:hover {
         color: var(--light-primary);
     }
-
 }
