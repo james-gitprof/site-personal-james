@@ -1,14 +1,15 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-white: #1b1c25;
+        --color-white: #16161e;
         --color-black: #f8f9fa;
-        --primary-color: #3a447c;
-        --medium-primary: #3a447c;
+        --primary-color: #253264;
+        --medium-primary: #253264;
+        --very-light-primary: #1b1c2500;
     }
 
-    .section-about-me {
-        border-block-end: .2rem solid var(--primary-color);
+    .dev-portrait {
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.75);
     }
 
     .role-text {
@@ -19,12 +20,9 @@
         color: var(--color-black);
     }
     
-    .section-dev-skills {
-        background-color: var(--color-white);
-    }
-
     .education-node {
         color: var(--color-black);
+        box-shadow: 0 0 1.6rem rgba(0,0,0,.75);
     }
 
     .contact-form .form-component--button-submit {
@@ -45,5 +43,9 @@
 
     .scroll-cta:hover {
         color: var(--light-primary);
+    }
+
+    footer {
+        border-block-start: 1px solid var(--primary-color);
     }
 }
