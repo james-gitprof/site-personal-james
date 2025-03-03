@@ -48,4 +48,9 @@
     footer {
         border-block-start: 1px solid var(--primary-color);
     }
+
+    .footer-link:hover {
+        color: rgb(202, 202, 202);
+
+    }
 }
